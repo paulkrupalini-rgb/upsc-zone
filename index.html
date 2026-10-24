@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prepare smarter for UPSC with AI mock tests, current affairs, revision notes and PYQs.">
+  <title>UPSC ZONE AI | Prepare Smarter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a class="logo" href="#home">
+      <span class="logo-icon">Z</span>
+      UPSC ZONE <span class="ai">AI</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav id="navLinks" class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#method">Our approach</a>
+      <a href="#stories">Success stories</a>
+      <a href="#features" class="nav-cta">Explore platform ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="live-dot"></span>
+          YOUR PERSONAL AI STUDY COMPANION
+        </div>
+
+        <h1>
+          Your UPSC dream deserves a
+          <span>smarter strategy.</span>
+        </h1>
+
+        <p class="hero-description">
+          Less overwhelm. More direction.
+          Build a focused preparation routine with practice,
+          current affairs and revision tools in one place.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#features" class="button button-primary">
+            Explore your toolkit →
+          </a>
+          <a href="#method" class="button button-secondary">
+            Discover the approach
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span>✓</span> Structured learning
+          <span>✓</span> Focused practice
+          <span>✓</span> Smarter revision
+        </div>
+      </div>
+
+      <div class="study-card" aria-label="Illustrative UPSC preparation dashboard">
+  <div class="card-top">
+    <div>
+      <span class="muted-label">YOUR PREPARATION SPACE</span>
+      <h2>Your next step starts here.</h2>
+    </div>
+    <span class="sparkle">✳</span>
+  </div>
+
+  <div class="daily-focus">
+    <div class="focus-icon">◎</div>
+    <div>
+      <strong>Today's focus</strong>
+      <p>Small steps. Steady progress.</p>
+    </div>
+  </div>
+
+  <div class="dashboard-module">
+    <div class="module-icon">◈</div>
+    <div class="module-content">
+      <strong>Prelims readiness</strong>
+      <p>Practise MCQs and revisit weak topics.</p>
+      <span class="module-label">PRACTISE & IMPROVE</span>
+    </div>
+  </div>
+
+  <div class="dashboard-module">
+    <div class="module-icon">✎</div>
+    <div class="module-content">
+      <strong>Mains answer-writing</strong>
+      <p>Build structured answers with relevant examples.</p>
+      <span class="module-label">WRITE & REFINE</span>
+    </div>
+  </div>
+
+  <div class="dashboard-module">
+    <div class="module-icon">◷</div>
+    <div class="module-content">
+      <strong>Current-affairs revision</strong>
+      <p>Organise important topics for review.</p>
+      <span class="module-label">REVISE & RECALL</span>
+    </div>
+  </div>
+
+  <div class="quote">
+    “Consistency is a strategy, not just a habit.”
+  </div>
+
+  <p class="dashboard-note">
+    Illustrative concept preview · Not live performance data
+  </p>
+</div>
+    </section>
+    <section class="mission-control" id="mission-control">
+  <div class="mission-header">
+    <div>
+      <p class="eyebrow">YOUR PREPARATION, AT A GLANCE</p>
+      <h2>UPSC Mission Control</h2>
+      <p class="mission-intro">
+        Small, consistent steps. One stronger attempt at a time.
+      </p>
+    </div>
+    <span class="mission-badge">DAILY MISSION</span>
+  </div>
+
+  <div class="mission-progress-card">
+    <div class="mission-progress-heading">
+      <div>
+        <h3>Today's preparation</h3>
+        <p id="missionProgressText">0 of 3 missions completed</p>
+      </div>
+      <strong id="missionProgressPercent">0%</strong>
+    </div>
+
+    <div class="mission-progress-track">
+      <div id="missionProgressBar"></div>
+    </div>
+
+    <div class="mission-tasks">
+      <label class="mission-task">
+        <input type="checkbox" data-mission="quiz">
+        <span>
+          <strong>Test your knowledge</strong>
+          <small>Complete the Daily Challenge</small>
+        </span>
+        <a href="#daily-challenge">Start →</a>
+      </label>
+
+      <label class="mission-task">
+        <input type="checkbox" data-mission="planner">
+        <span>
+          <strong>Follow your study plan</strong>
+          <small>Complete a planned study activity</small>
+        </span>
+        <a href="#study-planner">Plan →</a>
+      </label>
+
+      <label class="mission-task">
+        <input type="checkbox" data-mission="writing">
+        <span>
+          <strong>Strengthen answer writing</strong>
+          <small>Practise a Mains answer</small>
+        </span>
+        <a href="#study-focus">Practise →</a>
+      </label>
+    </div>
+  </div>
+</section>
+
+    <section class="trust-strip">
+      <p>ONE PREPARATION JOURNEY. FOUR SMARTER TOOLS.</p>
+      <div class="trust-items">
+        <span>✳ AI-powered practice</span>
+        <span>◷ Daily awareness</span>
+        <span>▤ Focused revision</span>
+        <span>◎ Exam-oriented learning</span>
+      </div>
+    </section>
+     <section class="focus-section" id="study-focus">
+  <div class="focus-container">
+    <span class="section-tag">YOUR PREPARATION JOURNEY</span>
+    <h2>What are you focusing on today?</h2>
+    <p class="focus-intro">
+      Choose a goal to discover a suggested next step.
+    </p>
+
+    <div class="focus-options" role="group"
+         aria-label="Choose your preparation focus">
+      <button class="focus-option is-active"
+              type="button" data-focus="prelims"
+              aria-pressed="true">
+        <span aria-hidden="true">◎</span> Prelims
+      </button>
+
+      <button class="focus-option"
+              type="button" data-focus="mains"
+              aria-pressed="false">
+        <span aria-hidden="true">✎</span> Mains
+      </button>
+
+      <button class="focus-option"
+              type="button" data-focus="current-affairs"
+              aria-pressed="false">
+        <span aria-hidden="true">◷</span> Current Affairs
+      </button>
+    </div>
+
+    <div class="focus-result" aria-live="polite">
+      <span class="focus-result-label">
+        YOUR SUGGESTED NEXT STEP
+      </span>
+      <h3 id="focusResultTitle">
+        Start with a short practice session.
+      </h3>
+      <p id="focusResultText">
+        Try 10 practice MCQs, then review the explanations
+        for any mistakes.
+      </p>
+      <span class="focus-disclaimer">
+        Example recommendation · No live AI analysis
+      </span>
+      <a
+  class="button focus-quiz-link"
+  id="focusActionLink"
+  href="#daily-challenge"
+>
+  Go to Daily Challenge →
+</a>
+    </div>
+  </div>
+</section>
+<section id="study-planner" class="study-planner section">
+  <div class="section-heading">
+    <p class="eyebrow">YOUR DAILY ROADMAP</p>
+    <h2>Plan smarter. Prepare better.</h2>
+    <p>Build a realistic study plan around your available time.</p>
+  </div>
+
+  <div class="planner-controls">
+    <label for="studyHours">How much time do you have?</label>
+    <select id="studyHours">
+      <option value="1">1 hour</option>
+      <option value="2" selected>2 hours</option>
+      <option value="3">3 hours</option>
+      <option value="4">4+ hours</option>
+    </select>
+
+    <label for="plannerFocus">What are you preparing for?</label>
+    <select id="plannerFocus">
+      <option value="Prelims">Prelims</option>
+      <option value="Mains">Mains</option>
+      <option value="Current Affairs">Current Affairs</option>
+    </select>
+
+    <button type="button" id="generatePlan">
+      Generate my study plan
+    </button>
+  </div>
+
+  <div id="plannerResults" class="planner-results" hidden>
+    <h3>Your study roadmap</h3>
+    <p id="plannerSummary"></p>
+    <div id="plannerTasks"></div>
+
+    <div class="planner-progress">
+      <div class="planner-progress-track">
+        <div id="plannerProgressBar"></div>
+      </div>
+      <p id="plannerProgressText">0% completed</p>
+    </div>
+  </div>
+</section>
+<!-- UPSC Daily Challenge -->
+<section class="daily-challenge" id="daily-challenge">
+  <div class="challenge-container">
+
+    <div class="challenge-heading">
+      <span class="section-tag">TEST YOUR KNOWLEDGE</span>
+      <h2>Your Daily UPSC Challenge</h2>
+      <p>Five questions. Learn from every answer.</p>
+    </div>
+
+    <div class="challenge-card" id="quizCard">
+      <div class="challenge-top">
+        <span class="challenge-badge">DAILY PRACTICE</span>
+        <span class="challenge-subject" id="quizSubject">
+          Indian Polity
+        </span>
+      </div>
+
+      <div class="quiz-progress-info">
+        <span id="questionCounter">QUESTION 1 OF 5</span>
+        <span id="progressPercent">20% complete</span>
+      </div>
+
+      <div class="quiz-progress-track">
+        <div class="quiz-progress-bar" id="quizProgressBar"></div>
+      </div>
+
+      <p class="challenge-number" id="questionNumber">QUESTION 01</p>
+      <h3 id="quizQuestion"></h3>
+
+      <div class="quiz-options" id="quizOptions"
+           role="group" aria-label="Answer options"></div>
+
+      <button class="button challenge-submit"
+              id="submitAnswer" type="button" disabled>
+        Submit answer →
+      </button>
+
+      <div class="quiz-feedback" id="quizFeedback"
+           aria-live="polite" hidden>
+        <h4 id="feedbackTitle"></h4>
+        <p id="feedbackText"></p>
+      </div>
+
+      <button class="button challenge-next"
+              id="nextQuestion" type="button" hidden>
+        Next question →
+      </button>
+
+      <div class="quiz-results" id="quizResults"
+           aria-live="polite" hidden>
+        <span class="challenge-badge">CHALLENGE COMPLETE</span>
+        <h3 id="quizFinalTitle">Your results</h3>
+        <p class="quiz-final-score" id="quizFinalScore"></p>
+        <p id="quizFinalMessage"></p>
+        <div id="quizReview" class="quiz-review"></div>
+        <div class="smart-recommendation" id="smartRecommendation" hidden>
+  <p class="recommendation-label">YOUR PERSONAL STUDY TIP</p>
+  <h3 id="recommendationTitle">Your next revision task</h3>
+  <p id="recommendationText"></p>
+  <a id="recommendationLink" href="#study-focus">
+    Start revising →
+  </a>
+</div>
+        <button class="button challenge-retry"
+                id="retryQuiz" type="button">
+          Try again ↻
+        </button>
+      </div>
+
+      <p class="challenge-note">
+        Practice questions for learning purposes · Not official UPSC questions
+      </p>
+    </div>
+
+  </div>
+</section>
+<section class="progress-section" id="my-progress">
+  <div class="container">
+    <span class="section-label">YOUR LEARNING JOURNEY</span>
+    <h2>My Preparation Progress</h2>
+    <p class="section-description">
+      Keep track of your practice across all three preparation areas.
+    </p>
+
+    <div class="progress-grid">
+      <article class="progress-card">
+        <h3>Prelims</h3>
+        <p class="progress-value" id="progressPrelims">Not attempted</p>
+        <p class="progress-detail" id="progressPrelimsDetail">
+          Complete the Daily Challenge quiz.
+        </p>
+      </article>
+
+      <article class="progress-card">
+        <h3>Mains</h3>
+        <p class="progress-value" id="progressMains">Not started</p>
+        <p class="progress-detail" id="progressMainsDetail">
+          Write your first answer.
+        </p>
+      </article>
+
+      <article class="progress-card">
+        <h3>Current Affairs</h3>
+        <p class="progress-value" id="progressCurrentAffairs">Not started</p>
+        <p class="progress-detail" id="progressCurrentAffairsDetail">
+          Start your revision notes.
+        </p>
+      </article>
+    </div>
+     <div class="overall-progress">
+  <div class="overall-progress-heading">
+    <h3>Overall Preparation Progress</h3>
+    <span id="overallProgressPercentage">0%</span>
+  </div>
+
+  <div
+    class="overall-progress-track"
+    role="progressbar"
+    aria-label="Overall preparation progress"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow="0"
+    id="overallProgressBar"
+  >
+    <div class="overall-progress-fill" id="overallProgressFill"></div>
+  </div>
+
+  <p id="overallProgressMessage">
+    Complete your first activity to start tracking your progress.
+  </p>
+</div>
+    <p class="progress-disclaimer">
+      Your progress is saved locally in this browser on this device.
+    </p>
+  </div>
+</section>
+<section class="mains-practice" id="mains-practice">
+  <div class="container">
+    <span class="section-label">MAINS ANSWER WRITING</span>
+    <h2>Learn to structure a better answer.</h2>
+    <p class="section-description">
+      Practise presenting your ideas clearly, logically, and within a word limit.
+    </p>
+
+    <div class="mains-practice-card">
+      <span class="practice-tag">TODAY'S PRACTICE</span>
+      <h3>Why is fundamental education important for an inclusive society?</h3>
+      <p>
+        Write a short answer covering the introduction, key arguments,
+        and conclusion.
+      </p>
+
+      <div class="practice-details">
+        <span>Suggested time: 10 minutes</span>
+        <span>Target: 150 words</span>
+      </div>
+
+      <label for="mainsAnswer">Write your answer</label>
+      <textarea
+        id="mainsAnswer"
+        rows="7"
+        maxlength="1500"
+        placeholder="Start with a brief introduction, develop your key points, and end with a conclusion..."
+      ></textarea>
+
+      <div class="answer-footer">
+        <span id="wordCount">0 words</span>
+        <button class="button" id="showAnswerGuide" type="button">
+          Show answer guide
+        </button>
+      </div>
+
+      <div id="answerGuide" hidden>
+        <h4>Suggested answer structure</h4>
+        <p><strong>Introduction:</strong> Explain how education supports equal opportunity and participation in society.</p>
+        <p><strong>Key arguments:</strong> Discuss awareness of rights, employment opportunities, social mobility, and reduced inequality. Mention barriers such as poverty and unequal access.</p>
+        <p><strong>Conclusion:</strong> Emphasise inclusive, accessible, quality education for all.</p>
+        <p class="guide-note">Use this as a structure guide, not a model answer to memorise.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="current-affairs-practice" id="current-affairs-practice">
+  <div class="container">
+    <span class="section-label">CURRENT AFFAIRS REVISION LAB</span>
+    <h2>Turn the news into UPSC-ready knowledge.</h2>
+    <p class="section-description">
+      Practise connecting an issue with its background, impact,
+      and relevance to the UPSC syllabus.
+    </p>
+
+    <div class="current-affairs-card">
+      <span class="practice-tag">REVISION EXERCISE</span>
+      <h3>Urban flooding in Indian cities</h3>
+      <p>
+        Use this practice topic to explore urban planning, drainage,
+        wetland protection, climate resilience, and disaster management.
+      </p>
+
+      <h4>Think through these questions</h4>
+      <ul>
+        <li>What natural and human factors contribute to urban flooding?</li>
+        <li>How can city planning reduce flood risk?</li>
+        <li>Which sustainable solutions should local authorities prioritise?</li>
+      </ul>
+
+      <label for="currentAffairsNotes">Your revision notes</label>
+      <textarea
+        id="currentAffairsNotes"
+        rows="6"
+        maxlength="2000"
+        placeholder="Write the causes, impacts, solutions, and links to the UPSC syllabus..."
+      ></textarea>
+      <div class="current-affairs-tools">
+  <span id="currentAffairsWordCount" aria-live="polite">
+    0 words
+  </span>
+
+  <button
+    class="button"
+    id="toggleAnalysisGuide"
+    type="button"
+    aria-expanded="false"
+    aria-controls="currentAffairsGuide"
+  >
+    Show analysis guide
+  </button>
+</div>
+
+<div id="currentAffairsGuide" hidden>
+  <h4>UPSC issue-analysis framework</h4>
+
+  <p>
+    <strong>1. Causes:</strong>
+    Identify the natural, social, economic, and administrative factors.
+  </p>
+
+  <p>
+    <strong>2. Impacts:</strong>
+    Consider effects on people, infrastructure, the economy, and the environment.
+  </p>
+
+  <p>
+    <strong>3. Challenges:</strong>
+    Identify implementation gaps, resource constraints, and competing priorities.
+  </p>
+
+  <p>
+    <strong>4. Solutions:</strong>
+    Suggest practical, sustainable measures and explain how they could be implemented.
+  </p>
+
+  <p>
+    <strong>5. UPSC connection:</strong>
+    Link the issue to relevant syllabus areas, government institutions, or policies.
+  </p>
+</div>
+
+      <p class="current-affairs-note">
+        Static practice exercise · Not a live news feed.
+      </p>
+    </div>
+  </div>
+</section>
+    <section class="section features" id="features">
+      <div class="section-heading">
+        <span class="section-tag">YOUR TOOLKIT</span>
+        <h2>Everything you need.<br><span>One clear direction.</span></h2>
+        <p>Make every study session purposeful with tools
+          designed around the UPSC preparation journey.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card feature-highlight">
+          <div class="feature-icon">✳</div>
+          <span class="feature-number">01 / PRACTICE</span>
+          <h3>AI Mock Tests</h3>
+          <p>Challenge your understanding with practice
+            designed to help you identify knowledge gaps.</p>
+          <a href="#method">Explore practice ↗</a>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">◷</div>
+          <span class="feature-number">02 / STAY INFORMED</span>
+          <h3>Current Affairs</h3>
+          <p>Connect important news and contemporary
+            issues with your exam preparation.</p>
+          <a href="#method">Explore updates ↗</a>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">▤</div>
+          <span class="feature-number">03 / REVISE</span>
+          <h3>Smart Notes</h3>
+          <p>Organise important concepts into revision-friendly
+            learning material for focused study.</p>
+          <a href="#method">Explore revision ↗</a>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">◎</div>
+          <span class="feature-number">04 / UNDERSTAND</span>
+          <h3>Previous Year Questions</h3>
+          <p>Explore past exam questions and understand
+            the patterns behind your preparation.</p>
+          <a href="#method">Explore PYQs ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="method-section" id="method">
+      <div class="method-copy">
+        <span class="section-tag">A CLEARER WAY FORWARD</span>
+        <h2>Turn preparation<br>into <span>progress.</span></h2>
+        <p>A meaningful study routine starts with knowing
+          what to learn, practising what you know and
+          revising what matters.</p>
+      </div>
+
+      <div class="steps">
+        <article class="step">
+          <span>01</span>
+          <div>
+            <h3>Understand your priorities</h3>
+            <p>Choose a topic and set a clear learning goal.</p>
+          </div>
+        </article>
+        <article class="step">
+          <span>02</span>
+          <div>
+            <h3>Practise with purpose</h3>
+            <p>Use questions to check your understanding.</p>
+          </div>
+        </article>
+        <article class="step">
+          <span>03</span>
+          <div>
+            <h3>Review and improve</h3>
+            <p>Revisit concepts and refine your study plan.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section stories" id="stories">
+      <div class="section-heading">
+        <span class="section-tag">BUILT AROUND ASPIRANTS</span>
+        <h2>Your journey matters.</h2>
+        <p>Good preparation is about progress, clarity
+          and learning one day at a time.</p>
+      </div>
+
+      <div class="story-grid">
+        <article class="story-card">
+          <span class="story-mark">“</span>
+          <p>A focused plan can make a demanding syllabus
+            feel much more manageable.</p>
+          <strong>Clarity over confusion</strong>
+          <span class="story-caption">A preparation principle</span>
+        </article>
+        <article class="story-card">
+          <span class="story-mark">“</span>
+          <p>Practising questions and reviewing mistakes
+            can turn knowledge into exam readiness.</p>
+          <strong>Practice with purpose</strong>
+          <span class="story-caption">A preparation principle</span>
+        </article>
+        <article class="story-card">
+          <span class="story-mark">“</span>
+          <p>Small, consistent revision sessions can help
+            build a stronger learning routine.</p>
+          <strong>Progress over pressure</strong>
+          <span class="story-caption">A preparation principle</span>
+        </article>
+      </div>
+      <p class="disclaimer">
+        These are illustrative messages, not real student testimonials.
+      </p>
+    </section>
+
+    <section class="final-cta">
+      <span class="section-tag">YOUR NEXT CHAPTER STARTS HERE</span>
+      <h2>Prepare with purpose.<br>Move forward with confidence.</h2>
+      <p>Build a smarter approach to your UPSC preparation.</p>
+      <a href="#home" class="button button-light">Start exploring ↑</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#home">
+      <span class="logo-icon">Z</span>
+      UPSC ZONE <span class="ai">AI</span>
+    </a>
+    <p>Designed for the journey, built for the aspirant.</p>
+    <div class="footer-links">
+      <a href="#features">Features</a>
+      <a href="#method">Our approach</a>
+      <a href="#home">Back to top ↑</a>
+    </div>
+    <p class="copyright">Concept landing page · UI Design Challenge</p>
+  </footer>
+
+</body>
+</html>
