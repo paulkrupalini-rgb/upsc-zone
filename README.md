@@ -203,10 +203,3 @@ The project emphasizes consistent practice, targeted revision, structured planni
 
 ---
 
- License
-
-Choose and add an appropriate open-source license if you intend to distribute the project under one. Until then, no license is specified.
-
----
-
-Built for UPSC aspirants who want to prepare with greater structure, consistency, and focus.
