@@ -198,7 +198,7 @@ The project emphasizes consistent practice, targeted revision, structured planni
 
  Project Links
 
-- GitHub Repository: ADD_YOUR_GITHUB_REPOSITORY_URL
+- GitHub Repository: https://github.com/paulkrupalini-rgb/upsc-zone
 
 
 ---
